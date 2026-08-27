@@ -2,7 +2,7 @@
 
 import { SITE } from "@/lib/constants";
 import { FadeIn } from "@/components/animated/FadeIn";
-import { Mail, Heart } from "lucide-react";
+import { Mail } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/icons";
 
 export default function Footer() {
@@ -26,7 +26,7 @@ export default function Footer() {
                 QUICK LINKS
               </div>
               <div className="grid grid-cols-2 gap-1.5">
-                {["Home", "About", "Work", "Skills", "Contact"].map(
+                {["Home", "About", "Work", "Skills", "Education", "Contact"].map(
                   (link) => (
                     <a
                       key={link}
@@ -74,10 +74,6 @@ export default function Footer() {
           <div className="mt-10 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-3">
             <span className="text-[10px] font-mono text-muted">
               © 2026 {SITE.fullName}. All rights reserved.
-            </span>
-            <span className="text-[10px] font-mono text-muted flex items-center gap-1">
-              Built with <Heart size={10} className="text-error" /> by{" "}
-              {SITE.fullName.split(" ")[0]}.OS
             </span>
           </div>
         </FadeIn>

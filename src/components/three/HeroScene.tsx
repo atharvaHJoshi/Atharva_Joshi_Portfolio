@@ -4,7 +4,6 @@ import { useRef, useMemo } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Float } from "@react-three/drei";
 import * as THREE from "three";
-import useThemeValue from "@/lib/useThemeValue";
 
 type SceneColors = {
   background: string;
@@ -160,32 +159,16 @@ function Scene({ colors }: { colors: SceneColors }) {
 }
 
 export default function HeroScene() {
-  const theme = useThemeValue();
-  const colors: SceneColors = useMemo(
-    () =>
-      theme === "dark"
-        ? {
-            background: "#0b0f19",
-            particlePrimary: "#8b5cf6",
-            particleSecondary: "#c084fc",
-            particleHighlight: "#eef2ff",
-            core: "#7c3aed",
-            ringA: "#8b5cf6",
-            ringB: "#c084fc",
-            ringC: "#7c3aed",
-          }
-        : {
-            background: "#ffffff",
-            particlePrimary: "#7c3aed",
-            particleSecondary: "#a78bfa",
-            particleHighlight: "#6366f1",
-            core: "#6d28d9",
-            ringA: "#6d28d9",
-            ringB: "#8b5cf6",
-            ringC: "#7c3aed",
-          },
-    [theme]
-  );
+  const colors: SceneColors = {
+    background: "#0b0f19",
+    particlePrimary: "#8b5cf6",
+    particleSecondary: "#c084fc",
+    particleHighlight: "#eef2ff",
+    core: "#7c3aed",
+    ringA: "#8b5cf6",
+    ringB: "#c084fc",
+    ringC: "#7c3aed",
+  };
 
   return (
     <div className="absolute inset-0 z-0">

@@ -36,9 +36,9 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.7 }}
         >
           <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tight mb-4">
-            <span className="text-foreground">{SITE.fullName.split(" ")[0]}</span>
+            <span className="text-foreground">{SITE.name.split(" ")[0]}</span>
             <br />
-            <span className="text-primary">{SITE.fullName.split(" ")[1]}</span>
+            <span className="text-primary">{SITE.name.split(" ")[1]}</span>
           </h1>
         </motion.div>
 
@@ -107,7 +107,9 @@ export default function Hero() {
           </MagneticButton>
           <MagneticButton strength={0.2}>
             <a
-              href="#"
+              href="/Atharva-Joshi-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 border border-border rounded-lg font-mono text-sm text-muted hover:border-primary/50 hover:text-primary transition-colors"
             >
               <FileText size={16} />

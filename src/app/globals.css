@@ -1,34 +1,7 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
-
-/* ---- Light theme (default / formal professional) ---- */
+/* ---- Dark theme (only theme) ---- */
 :root {
-  --background: #ffffff;
-  --foreground: #111827;
-  --surface: #f8fafc;
-  --surface-light: #f1f5f9;
-  --border: #e2e8f0;
-  --border-light: #cbd5e1;
-  --primary: #6d28d9;
-  --primary-light: #7c3aed;
-  --accent: #8b5cf6;
-  --glow: #6d28d9;
-  --muted: #64748b;
-  --success: #16a34a;
-  --error: #dc2626;
-  --warning: #d97706;
-
-  --glass-bg: rgba(248, 250, 252, 0.75);
-  --glass-border: rgba(203, 213, 225, 0.5);
-  --scroll-track: #e2e8f0;
-  --scroll-thumb: #cbd5e1;
-  --noise-opacity: 0.02;
-  --grid-line: rgba(100, 116, 139, 0.12);
-}
-
-/* ---- Dark theme ---- */
-.dark {
   --background: #0b0f19;
   --foreground: #eef2ff;
   --surface: #131a2b;
@@ -94,10 +67,8 @@
 
 html {
   scroll-behavior: smooth;
-  color-scheme: light;
-}
-html.dark {
   color-scheme: dark;
+  font-size: 17px;
 }
 
 body {

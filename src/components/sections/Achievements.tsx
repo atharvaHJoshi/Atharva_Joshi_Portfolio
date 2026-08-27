@@ -53,7 +53,7 @@ export default function Achievements() {
                   <div className="text-xs text-primary font-mono mb-2">
                     {ach.event} — {ach.position}
                   </div>
-                  <p className="text-xs text-muted leading-relaxed">
+                  <p className="text-sm text-muted leading-relaxed">
                     {ach.description}
                   </p>
                 </div>

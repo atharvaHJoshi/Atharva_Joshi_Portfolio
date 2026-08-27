@@ -2,6 +2,7 @@ import { projects } from "./data/projects";
 import { skillCategories } from "./data/skills";
 import { experiences } from "./data/experience";
 import { achievements } from "./data/achievements";
+import { education } from "./data/education";
 import { SITE } from "./constants";
 
 export interface RagSource {
@@ -128,6 +129,16 @@ function buildKnowledgeBase(): KnowledgeEntry[] {
       .join("\n")}`,
   });
 
+  entries.push({
+    id: "education-overview",
+    source: "Education",
+    category: "education",
+    keywords: ["education", "degree", "college", "university", "study", "student", "academic", "bachelor", "diploma", "school", "university", "graphic", "pict", "polytechnic"],
+    text: `Atharva's education:\n${education
+      .map((e) => `• ${e.degree} at ${e.institution} (${e.duration}). ${e.description}`)
+      .join("\n")}`,
+  });
+
   const allSkills = skillCategories.flatMap((c) => c.skills);
   entries.push({
     id: "contact",
@@ -182,6 +193,7 @@ const CATEGORY_LABELS: Record<KnowledgeEntry["category"], string> = {
   skill: "Skills",
   experience: "Experience",
   achievement: "Achievements",
+  education: "Education",
   contact: "Contact",
 };
 
@@ -190,6 +202,7 @@ const OVERVIEW_IDS = new Set([
   "skills-overview",
   "experience-overview",
   "achievements-overview",
+  "education-overview",
 ]);
 
 function generate(query: string, hits: KnowledgeEntry[]): string {

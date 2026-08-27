@@ -43,7 +43,7 @@ export default function Experience() {
                       </div>
                     </div>
 
-                    <p className="text-sm text-muted mb-4">{exp.description}</p>
+                    <p className="text-base text-muted mb-4 leading-relaxed">{exp.description}</p>
 
                     {/* Responsibilities */}
                     <div className="mb-4">
@@ -54,7 +54,7 @@ export default function Experience() {
                         {exp.responsibilities.map((r, j) => (
                           <li
                             key={j}
-                            className="flex items-start gap-2 text-sm text-muted/80"
+                            className="flex items-start gap-2 text-base text-muted/80"
                           >
                             <ChevronRight
                               size={12}
@@ -67,22 +67,24 @@ export default function Experience() {
                     </div>
 
                     {/* Achievements */}
-                    <div className="mb-4">
-                      <div className="text-xs font-mono text-muted mb-2">
-                        ACHIEVEMENTS
+                    {exp.achievements.length > 0 && (
+                      <div className="mb-4">
+                        <div className="text-xs font-mono text-muted mb-2">
+                          ACHIEVEMENTS
+                        </div>
+                        <ul className="space-y-1.5">
+                          {exp.achievements.map((a, j) => (
+                            <li
+                              key={j}
+                              className="flex items-start gap-2 text-sm text-emerald-400/80"
+                            >
+                              <span className="text-emerald-400 mt-0.5">★</span>
+                              {a}
+                            </li>
+                          ))}
+                        </ul>
                       </div>
-                      <ul className="space-y-1.5">
-                        {exp.achievements.map((a, j) => (
-                          <li
-                            key={j}
-                            className="flex items-start gap-2 text-sm text-emerald-400/80"
-                          >
-                            <span className="text-emerald-400 mt-0.5">★</span>
-                            {a}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                    )}
 
                     {/* Technologies */}
                     <div className="flex flex-wrap gap-1.5">

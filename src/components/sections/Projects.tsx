@@ -14,7 +14,7 @@ import {
   X,
 } from "lucide-react";
 
-const categories = ["All", "Full Stack", "AI", "Robotics", "ML"];
+const categories = ["All", "AI", "Robotics", "Full Stack", "IoT"];
 
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -83,7 +83,7 @@ export default function Projects() {
                     className="text-muted group-hover:text-primary transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                   />
                 </div>
-                <p className="text-sm text-muted mb-4 leading-relaxed">
+                <p className="text-base text-muted mb-4 leading-relaxed">
                   {p.description}
                 </p>
                 <div className="flex flex-wrap gap-1.5">
@@ -136,14 +136,14 @@ export default function Projects() {
                   {project.category}
                 </div>
                 <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
-                <p className="text-muted mb-6">{project.description}</p>
+                <p className="text-base text-muted mb-6 leading-relaxed">{project.description}</p>
 
                 {/* Problem */}
                 <div className="mb-6">
                   <h4 className="text-sm font-mono text-primary mb-2">
                     PROBLEM
                   </h4>
-                  <p className="text-sm text-muted leading-relaxed">
+                  <p className="text-base text-muted leading-relaxed">
                     {project.problem}
                   </p>
                 </div>
@@ -153,7 +153,7 @@ export default function Projects() {
                   <h4 className="text-sm font-mono text-primary mb-2">
                     SOLUTION
                   </h4>
-                  <p className="text-sm text-muted leading-relaxed">
+                  <p className="text-base text-muted leading-relaxed">
                     {project.solution}
                   </p>
                 </div>
@@ -203,7 +203,7 @@ export default function Projects() {
                     {project.challenges.map((ch, i) => (
                       <li
                         key={i}
-                        className="flex items-start gap-2 text-sm text-muted"
+                        className="flex items-start gap-2 text-base text-muted"
                       >
                         <span className="text-primary mt-1">▸</span>
                         {ch}

@@ -61,7 +61,7 @@ export default function About() {
 
         <div className="grid lg:grid-cols-2 gap-12 mb-20">
           <FadeIn delay={0.1}>
-            <div className="space-y-4 text-muted leading-relaxed">
+            <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
                 I&apos;m a software engineer who builds systems that work — not
                 just code that compiles. My approach bridges the gap between

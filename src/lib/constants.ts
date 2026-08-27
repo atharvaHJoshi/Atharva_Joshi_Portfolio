@@ -1,12 +1,14 @@
 export const SITE = {
   name: "ATHARVA JOSHI",
-  fullName: "ATHARVA JOSHI",
+  fullName: "ATHARVA HEMANT JOSHI",
   title: "SOFTWARE ENGINEER",
-  tagline: "Building intelligent, scalable systems.",
+  tagline: "Building secure, intelligent systems.",
   domains: ["FULL STACK", "AI/ML", "CLOUD", "SYSTEMS", "ROBOTICS"],
-  email: "atharva@example.com",
+  email: "josh.atharva2005@gmail.com",
+  phone: "+91 8999-621-553",
+  location: "Pune, Maharashtra, India",
   github: "https://github.com/atharvajoshi",
-  linkedin: "https://linkedin.com/in/atharvajoshi",
+  linkedin: "https://www.linkedin.com/in/atharva-joshi-35a254296/",
   status: "OPEN TO SOFTWARE ENGINEERING OPPORTUNITIES",
 } as const;
 
@@ -15,6 +17,7 @@ export const NAV_ITEMS = [
   { label: "ABOUT", icon: "◇", href: "#about" },
   { label: "WORK", icon: "⬡", href: "#work" },
   { label: "SKILLS", icon: "◈", href: "#skills" },
+  { label: "EDUCATION", icon: "⌑", href: "#education" },
   { label: "CONTACT", icon: "✉", href: "#contact" },
 ] as const;
 

@@ -25,7 +25,7 @@ export default function SectionHeading({
         {title} <span className="text-primary">{accent}</span>
       </h2>
       {description && (
-        <p className="text-muted max-w-2xl mb-8 leading-relaxed">
+        <p className="text-lg text-muted max-w-2xl mb-8 leading-relaxed">
           {description}
         </p>
       )}

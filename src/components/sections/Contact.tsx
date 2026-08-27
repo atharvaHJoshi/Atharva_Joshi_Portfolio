@@ -192,7 +192,9 @@ export default function Contact() {
                     <ArrowUpRight size={14} className="ml-auto text-muted opacity-0 group-hover:opacity-100 transition-opacity" />
                   </a>
                   <a
-                    href="#"
+                    href="/Atharva-Joshi-Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-3 p-3 rounded-lg bg-surface hover:bg-surface-light transition-colors group"
                   >
                     <FileText size={16} className="text-muted group-hover:text-primary transition-colors" />

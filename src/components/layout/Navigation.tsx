@@ -5,7 +5,6 @@ import { motion, AnimatePresence, useReducedMotion } from "motion/react";
 import { cn } from "@/lib/utils";
 import { NAV_ITEMS, SITE } from "@/lib/constants";
 import { Menu, X } from "lucide-react";
-import ThemeToggle from "./ThemeToggle";
 
 export default function Navigation() {
   const [activeSection, setActiveSection] = useState("home");
@@ -62,19 +61,7 @@ export default function Navigation() {
             </span>
           </div>
 
-          <div className="hidden md:flex items-center gap-4">
-            <div className="flex items-center gap-2 text-xs font-mono text-muted">
-              <span className="w-1.5 h-1.5 rounded-full bg-success" />
-              SYSTEMS ONLINE
-            </div>
-            <div className="h-4 w-px bg-border" />
-            <span className="text-xs font-mono text-primary">
-              {SITE.status}
-            </span>
-          </div>
-
           <div className="flex items-center gap-3">
-            <ThemeToggle />
             <button
               onClick={() => setIsMobileOpen(!isMobileOpen)}
               className="lg:hidden p-2 text-muted hover:text-foreground transition-colors"

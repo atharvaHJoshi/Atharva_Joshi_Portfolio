@@ -1,0 +1,2188 @@
+# Software Requirements Specification (SRS)
+
+## ATHARVA.OS — Interactive Engineering Portfolio
+
+**Version:** 1.0
+**Date:** 14 August 2026
+**Document Type:** Software Requirements Specification
+**Product:** ATHARVA.OS — Interactive Professional Engineering Portfolio
+**Primary Objective:** Build a highly distinctive, interactive, production-grade portfolio that demonstrates Software Engineering, Full-Stack Development, AI/ML, Cloud, DevOps, Systems, and Robotics capabilities through the website itself.
+
+---
+
+# 1. Introduction
+
+## 1.1 Purpose
+
+The purpose of this project is to design and develop **ATHARVA.OS**, an interactive professional engineering portfolio that goes beyond a traditional personal portfolio.
+
+The website will function as both:
+
+1. A professional portfolio for recruiters, hiring managers, collaborators, and technical professionals.
+2. A full-stack software product that demonstrates the owner's ability to design, develop, deploy, secure, monitor, and maintain modern software systems.
+
+The portfolio must not simply list technical skills. It must **demonstrate those skills through interactive features, live systems, architecture visualizations, engineering experiments, AI functionality, backend APIs, authentication, database integration, deployment infrastructure, and production-quality UI/UX.**
+
+---
+
+# 2. Product Vision
+
+## 2.1 Vision Statement
+
+> **Don't build a portfolio that tells recruiters you can engineer software. Build a portfolio that lets recruiters experience how you engineer software.**
+
+ATHARVA.OS will present the user as:
+
+**Software Engineer**
+
+with specialization across:
+
+* Full-Stack Development
+* AI / Machine Learning
+* Computer Vision
+* Backend Engineering
+* Cloud Computing
+* DevOps
+* System Design
+* Robotics
+* Data & Intelligent Systems
+
+---
+
+# 3. Product Concept
+
+ATHARVA.OS will use the visual metaphor of a futuristic **engineering operating system / command center**.
+
+Instead of a traditional navigation structure:
+
+```text
+Home
+About
+Skills
+Projects
+Experience
+Contact
+```
+
+the application will provide an interactive environment:
+
+```text
+ATHARVA.OS
+
+◉ SYSTEM
+├── HOME
+├── WORK
+├── ARCHITECTURE
+├── AI LAB
+├── ROBOTICS
+├── ENGINEERING LAB
+├── GITHUB
+├── ABOUT
+└── CONTACT
+```
+
+The interface should feel like:
+
+> **Linear + Vercel + Apple + Engineering Command Center**
+
+rather than a generic developer portfolio.
+
+---
+
+# 4. Goals and Objectives
+
+## 4.1 Primary Goals
+
+The system must:
+
+1. Create a memorable first impression.
+2. Demonstrate full-stack engineering capability.
+3. Showcase AI/ML and computer vision expertise.
+4. Showcase robotics and autonomous-system work.
+5. Demonstrate system-design knowledge.
+6. Demonstrate backend/API development.
+7. Demonstrate database and authentication implementation.
+8. Demonstrate cloud and DevOps knowledge.
+9. Provide recruiters with a fast way to understand the candidate.
+10. Provide detailed technical case studies for engineers.
+11. Provide interactive technical demonstrations.
+12. Integrate real GitHub activity.
+13. Provide an AI-powered portfolio assistant.
+14. Provide a production-grade contact system.
+15. Maintain excellent performance and accessibility.
+16. Be fully responsive across desktop, tablet, and mobile.
+
+---
+
+# 5. Target Users
+
+## 5.1 Recruiters
+
+Recruiters need:
+
+* Quick candidate overview
+* Resume
+* Skills
+* Experience
+* Major projects
+* Achievements
+* Contact information
+* Availability/status
+
+## 5.2 Hiring Managers
+
+Hiring managers need:
+
+* Technical depth
+* Project architecture
+* Engineering decisions
+* Technologies used
+* System design
+* Deployment details
+* Performance information
+
+## 5.3 Software Engineers
+
+Technical visitors should be able to explore:
+
+* Architecture
+* APIs
+* Engineering experiments
+* DSA visualizations
+* System design
+* AI experiments
+* Source code
+* Technical case studies
+
+## 5.4 Collaborators
+
+Collaborators need:
+
+* Project information
+* Technical capabilities
+* Contact mechanism
+* GitHub
+* Areas of expertise
+
+---
+
+# 6. Functional Requirements
+
+# 6.1 Landing / System Initialization
+
+The application shall provide an optional animated initialization experience.
+
+Example:
+
+```text
+INITIALIZING ATHARVA.OS...
+
+SYSTEMS       ██████████ 100%
+AI ENGINE     ██████████ 100%
+FULL STACK    ██████████ 100%
+CLOUD         ██████████ 100%
+
+CONNECTION ESTABLISHED
+
+ATHARVA JOSHI
+SOFTWARE ENGINEER
+
+[ ENTER SYSTEM ]
+```
+
+### Requirements
+
+* FR-001: Display system initialization animation.
+* FR-002: Display loading states for major modules.
+* FR-003: Provide an "Enter System" interaction.
+* FR-004: Provide a Skip option.
+* FR-005: Intro animation must not exceed approximately 2–3 seconds.
+* FR-006: Returning visitors may skip or receive a reduced animation.
+* FR-007: Respect `prefers-reduced-motion`.
+
+---
+
+# 6.2 Main ATHARVA.OS Interface
+
+The application shall provide a persistent application-style navigation.
+
+### Navigation
+
+```text
+ATHARVA.OS
+
+◉ HOME
+◇ WORK
+⬡ SYSTEMS
+◈ AI LAB
+▣ ROBOTICS
+◌ GITHUB
+⚙ ABOUT
+✉ CONTACT
+```
+
+### Requirements
+
+* FR-010: Navigation shall remain easily accessible.
+* FR-011: Navigation state shall visually indicate the current section.
+* FR-012: Page transitions shall be animated.
+* FR-013: Navigation shall work with keyboard controls.
+* FR-014: Mobile devices shall receive an adapted navigation system.
+* FR-015: Deep linking must work for major sections.
+
+---
+
+# 6.3 Hero / Home Section
+
+The Home section shall immediately communicate professional identity.
+
+### Required content
+
+```text
+ATHARVA JOSHI
+
+SOFTWARE ENGINEER
+
+Building intelligent, scalable systems.
+
+FULL STACK • AI/ML • CLOUD • SYSTEMS
+```
+
+### CTAs
+
+* Explore My Work
+* Recruiter View
+* Download Resume
+* Contact Me
+
+### Dynamic elements
+
+* System status
+* Current technology stack
+* GitHub activity
+* Availability status
+* Latest deployment status
+
+---
+
+# 6.4 System Status Dashboard
+
+The website shall display a system-health style dashboard.
+
+Example:
+
+```text
+SYSTEM STATUS
+
+Portfolio       ● ONLINE
+APIs            ● OPERATIONAL
+GitHub          ● CONNECTED
+AI Assistant    ● ONLINE
+Deployment      ● AUTOMATED
+
+Last deployment: 4m ago
+```
+
+### Requirements
+
+* FR-020: Display portfolio availability.
+* FR-021: Display API availability.
+* FR-022: Display GitHub integration status.
+* FR-023: Display AI assistant status.
+* FR-024: Display deployment status where technically feasible.
+* FR-025: Status information must use real backend/integration data where possible.
+* FR-026: The system must not display fabricated operational metrics.
+
+---
+
+# 6.5 Recruiter Mode
+
+A dedicated **Recruiter Mode** shall provide a condensed version of the portfolio.
+
+### Recruiter Dashboard
+
+```text
+ATHARVA JOSHI
+Software Engineer
+
+SPECIALIZATION
+
+FULL STACK
+AI / ML
+CLOUD
+SYSTEMS
+
+TOP PROJECTS
+
+CollabIQ
+Green Model Advisor
+Satellite AI Analytics
+Autonomous Drone System
+
+EXPERIENCE
+ACHIEVEMENTS
+
+[ VIEW RESUME ]
+[ CONTACT ATHARVA ]
+```
+
+### Requirements
+
+* FR-030: Provide Recruiter Mode button.
+* FR-031: Provide one-screen professional summary.
+* FR-032: Display top projects.
+* FR-033: Display primary technologies.
+* FR-034: Display experience.
+* FR-035: Display achievements.
+* FR-036: Provide resume access.
+* FR-037: Provide contact CTA.
+* FR-038: Recruiter Mode should prioritize information discoverable within approximately 30–60 seconds.
+
+---
+
+# 6.6 About Section
+
+The About section shall explain:
+
+* Professional identity
+* Engineering philosophy
+* Career journey
+* Technical interests
+* Areas of specialization
+* Current focus
+* Professional goals
+
+It shall avoid generic text and instead present a concise engineering narrative.
+
+---
+
+# 6.7 Engineering DNA
+
+The application shall contain an interactive **Engineering DNA** visualization.
+
+Example:
+
+```text
+ATHARVA DNA
+
+             ENGINEERING
+                  │
+       ┌──────────┼──────────┐
+       │          │          │
+      AI       SOFTWARE    SYSTEMS
+       │          │          │
+   Vision     Full Stack    Cloud
+       │          │          │
+   Robotics    Backend      DevOps
+```
+
+### Requirements
+
+* FR-050: Display major engineering domains.
+* FR-051: Allow users to expand nodes.
+* FR-052: Display technologies/projects associated with each node.
+* FR-053: Provide visual relationships between domains.
+* FR-054: Maintain responsive behavior.
+
+---
+
+# 6.8 Skills / Technology Stack
+
+The system shall provide an interactive technology ecosystem rather than static percentage bars.
+
+### Technology categories
+
+## Languages
+
+* C++
+* C
+* Python
+* Java
+* JavaScript
+* TypeScript
+* SQL
+* Bash
+
+## Frontend
+
+* React
+* Next.js
+* HTML
+* CSS
+* Tailwind CSS
+
+## Backend
+
+* FastAPI
+* Flask
+* Django
+* Node.js
+* REST APIs
+
+## AI / ML
+
+* PyTorch
+* TensorFlow
+* Scikit-learn
+* YOLO
+* OpenCV
+* Computer Vision
+* Generative AI
+
+## Cloud / DevOps
+
+* AWS
+* Docker
+* Kubernetes
+* GitHub Actions
+* Linux
+
+## Databases
+
+* PostgreSQL
+* MongoDB
+* Redis
+
+## Robotics
+
+* ROS2
+* SLAM
+* LiDAR
+* Computer Vision
+* PX4
+* MAVSDK
+
+### Requirements
+
+* FR-060: Skills must be grouped logically.
+* FR-061: Technologies must be clickable.
+* FR-062: Clicking a technology shall show projects where it was used.
+* FR-063: Technologies should display contextual information rather than arbitrary skill percentages.
+
+---
+
+# 6.9 Work / Projects Section
+
+The Work section shall display major projects.
+
+Initial projects shall include:
+
+1. CollabIQ
+2. Green Model Advisor
+3. Satellite AI Analytics
+4. Autonomous Drone Landing System
+5. Personalized Learning Pathway Generator
+6. Other relevant professional/academic projects
+
+Each project shall contain:
+
+* Project title
+* Category
+* Problem
+* Solution
+* Technologies
+* Architecture
+* Engineering decisions
+* Challenges
+* Results
+* Screenshots/video/demo
+* GitHub
+* Live demo where available
+
+---
+
+# 6.10 Project Case Study System
+
+Every major project shall have a detailed case study.
+
+### Case Study Structure
+
+```text
+PROJECT
+
+Problem
+↓
+Requirements
+↓
+Architecture
+↓
+Implementation
+↓
+Engineering Decisions
+↓
+Challenges
+↓
+Testing
+↓
+Deployment
+↓
+Results
+↓
+Future Improvements
+```
+
+### Requirements
+
+* FR-070: Provide detailed project pages.
+* FR-071: Provide architecture diagrams.
+* FR-072: Provide technical metrics where real.
+* FR-073: Provide technology list.
+* FR-074: Provide repository links.
+* FR-075: Provide live demo links where available.
+* FR-076: Explain important architectural decisions.
+* FR-077: Support images, diagrams, videos, and interactive visualizations.
+
+---
+
+# 6.11 Interactive Architecture Visualizer
+
+A central feature shall allow users to explore system architecture.
+
+Example:
+
+```text
+USER
+ ↓
+FRONTEND
+ ↓
+API
+ ↓
+BACKEND
+ ├── AUTH
+ ├── BUSINESS LOGIC
+ └── AI
+ ↓
+DATABASE
+```
+
+Users shall be able to click individual components.
+
+Example:
+
+```text
+DATABASE
+
+Purpose:
+Persistent application storage
+
+Technology:
+PostgreSQL
+
+Scaling:
+Horizontal / vertical
+
+Used by:
+Project X
+Project Y
+```
+
+### Requirements
+
+* FR-080: Render architecture diagrams.
+* FR-081: Make architecture nodes interactive.
+* FR-082: Display component descriptions.
+* FR-083: Display technology used.
+* FR-084: Display data flow.
+* FR-085: Support multiple project architectures.
+* FR-086: Support animated request/data flow.
+
+---
+
+# 6.12 Engineering Lab
+
+The Engineering Lab shall contain interactive technical demonstrations.
+
+Initial experiments:
+
+1. DSA Visualizer
+2. Sorting Visualizer
+3. Binary Search
+4. Sliding Window
+5. Two Pointer
+6. Prefix Sum
+7. Graph Algorithms
+8. LRU Cache
+9. Rate Limiter
+10. Load Balancer
+11. Caching Simulator
+12. Database Index Visualizer
+13. API/WebSocket demonstration
+14. System Design Simulator
+
+---
+
+# 6.13 DSA Visualizer
+
+Users shall be able to select algorithms and execute them visually.
+
+Example:
+
+```text
+ARRAY
+
+[4][7][2][9][1]
+
+Algorithm:
+
+○ Binary Search
+○ Sliding Window
+○ Two Pointer
+○ Prefix Sum
+
+[ RUN ]
+```
+
+The system shall display:
+
+* Current state
+* Algorithm steps
+* Comparisons
+* Complexity
+* Result
+
+---
+
+# 6.14 System Design Simulator
+
+The system shall demonstrate concepts such as:
+
+* Load balancing
+* Caching
+* API gateway
+* Database
+* Rate limiting
+* Horizontal scaling
+* Message queues
+* Microservices
+
+Example:
+
+```text
+CLIENT
+ ↓
+LOAD BALANCER
+ ↓
+┌───────────┐
+│           │
+SERVER 1   SERVER 2
+│           │
+└─────┬─────┘
+      ↓
+    CACHE
+      ↓
+  DATABASE
+```
+
+Users should be able to modify components and observe conceptual request flow.
+
+---
+
+# 6.15 Rate Limiter Simulator
+
+The system shall simulate incoming requests.
+
+Example:
+
+```text
+REQUEST RATE
+
+0 ─────────────────── 1000 req/s
+                     ▲
+                   742
+
+STATUS: ALLOWED
+```
+
+It shall demonstrate:
+
+* Request rate
+* Limit
+* Allowed requests
+* Rejected requests
+* Algorithm type
+* Current state
+
+---
+
+# 6.16 AI Lab
+
+The AI Lab shall provide interactive AI/ML demonstrations.
+
+Initial experiments may include:
+
+* Object detection
+* Image classification
+* Model comparison
+* Computer vision
+* Carbon-aware model selection
+* Recommendation engine
+* AI assistant
+
+---
+
+# 6.17 Computer Vision Demo
+
+A live or pre-recorded computer vision demonstration shall show:
+
+```text
+INPUT
+ ↓
+PREPROCESSING
+ ↓
+MODEL INFERENCE
+ ↓
+NMS
+ ↓
+DETECTION
+```
+
+Display:
+
+* Model
+* Input
+* Inference time
+* Detected objects
+* Confidence
+* FPS where meaningful
+
+---
+
+# 6.18 AI Portfolio Assistant
+
+The website shall provide an AI assistant.
+
+UI:
+
+```text
+ASK ATHARVA AI
+
+Ask about:
+
+• Projects
+• Skills
+• Experience
+• AI/ML
+• Full Stack
+• Robotics
+• System Design
+
+[ Ask a question... ]
+```
+
+### Example questions
+
+* Which project demonstrates backend skills?
+* What AI projects has Atharva built?
+* What technologies does Atharva use?
+* What is his strongest full-stack project?
+* Tell me about his robotics experience.
+* Which project uses computer vision?
+
+### Requirements
+
+* FR-120: Provide conversational interface.
+* FR-121: Use portfolio knowledge as grounding/context.
+* FR-122: Provide source project references in answers.
+* FR-123: Avoid inventing experience or technologies.
+* FR-124: Provide graceful fallback if the AI service is unavailable.
+* FR-125: Protect API credentials.
+* FR-126: Apply rate limiting.
+
+---
+
+# 6.19 Robotics Control Center
+
+The website shall contain a dedicated Robotics section.
+
+Example:
+
+```text
+ROBOTICS CONTROL CENTER
+
+LIVE MAP
+
+        · · · · ·
+       ·       ·
+      ·    ▲    ·
+       ·       ·
+        · · · ·
+
+LOCALIZATION
+
+X: 4.82m
+Y: 7.31m
+θ: 92°
+
+LIDAR       ● CONNECTED
+CAMERA      ● CONNECTED
+SLAM        ● ACTIVE
+```
+
+### Capabilities
+
+* Robotics project showcase
+* LiDAR visualization
+* SLAM visualization
+* Camera feeds/video demonstrations
+* Localization data replay
+* Navigation visualization
+* Autonomous-system architecture
+
+Actual hardware data may be replayed from recorded datasets where live hardware connectivity is unavailable.
+
+---
+
+# 6.20 Robotics Replay System
+
+The system shall support recorded robotics sessions.
+
+A replay may include:
+
+* Robot position
+* LiDAR scan
+* Camera frame
+* Path
+* Obstacles
+* Localization
+* Navigation commands
+
+Users shall be able to:
+
+* Play
+* Pause
+* Restart
+* Change playback speed
+
+---
+
+# 6.21 GitHub Integration
+
+The portfolio shall integrate with GitHub.
+
+The system may display:
+
+* Contribution activity
+* Repository list
+* Languages
+* Commit activity
+* Recent repositories
+* Repository metadata
+
+Example:
+
+```text
+GITHUB ACTIVITY
+
+Repositories     30+
+Contributions    XXXX
+Languages        Python · C++ · TypeScript
+```
+
+Only real API-derived values should be displayed.
+
+---
+
+# 6.22 Experience Section
+
+The Experience section shall present:
+
+* Organization
+* Role
+* Duration
+* Responsibilities
+* Technologies
+* Key achievements
+* Project links where relevant
+
+Experience may be presented using an interactive timeline.
+
+---
+
+# 6.23 Achievements Section
+
+The website shall showcase major achievements.
+
+Examples include:
+
+* ISRO robotics competitions
+* Robocon
+* Hackathons
+* Technical competitions
+* Leadership positions
+* Awards
+* Research activities
+
+Achievements should include:
+
+* Event
+* Position/result
+* Year
+* Brief explanation
+* Evidence/link where available
+
+---
+
+# 6.24 Resume System
+
+The website shall provide:
+
+* Resume preview
+* Resume download
+* Recruiter-friendly resume
+* Optional ATS-friendly version
+
+Required CTAs:
+
+```text
+VIEW RESUME
+DOWNLOAD RESUME
+```
+
+---
+
+# 6.25 Contact System
+
+The website shall contain a real contact form.
+
+Fields:
+
+* Name
+* Email
+* Organization
+* Subject
+* Message
+
+Optional:
+
+* Job type
+* LinkedIn
+* GitHub
+
+Flow:
+
+```text
+CONTACT FORM
+      ↓
+POST /api/contact
+      ↓
+BACKEND
+      ↓
+VALIDATION
+      ↓
+DATABASE
+      ↓
+EMAIL SERVICE
+      ↓
+ADMIN NOTIFICATION
+```
+
+---
+
+# 6.26 Admin Dashboard
+
+A protected admin dashboard shall be implemented.
+
+Example routes:
+
+```text
+/admin
+
+/admin/messages
+/admin/projects
+/admin/experience
+/admin/skills
+/admin/achievements
+/admin/analytics
+/admin/settings
+```
+
+### Admin capabilities
+
+* Login
+* Manage projects
+* Manage skills
+* Manage experience
+* Manage achievements
+* View messages
+* Manage AI knowledge
+* View analytics
+* Update availability
+* Manage featured projects
+
+---
+
+# 6.27 Authentication
+
+Admin functionality shall require authentication.
+
+Requirements:
+
+* Secure login
+* Password hashing
+* Session/JWT management
+* Protected routes
+* Logout
+* Session expiry
+* Rate limiting
+* Secure cookies where applicable
+* CSRF protection where applicable
+
+---
+
+# 6.28 Easter Eggs
+
+The application may include hidden interactions.
+
+Example:
+
+```text
+sudo atharva
+```
+
+Response:
+
+```text
+ACCESS GRANTED.
+
+DEVELOPER MODE ACTIVATED.
+
+WELCOME, ENGINEER.
+```
+
+Easter eggs must:
+
+* Not interfere with usability.
+* Not compromise security.
+* Not expose sensitive information.
+
+---
+
+# 6.29 Availability Status
+
+The system shall display professional availability.
+
+Example:
+
+```text
+● OPEN TO SOFTWARE ENGINEERING OPPORTUNITIES
+```
+
+This should be controlled from the admin dashboard.
+
+---
+
+# 6.30 Contact / Social Links
+
+The website shall provide professional links where applicable:
+
+* GitHub
+* LinkedIn
+* Email
+* Resume
+* Other relevant professional profiles
+
+---
+
+# 7. Backend Requirements
+
+## 7.1 API Architecture
+
+The backend shall expose RESTful APIs.
+
+Potential API structure:
+
+```text
+/api
+├── /projects
+├── /skills
+├── /experience
+├── /achievements
+├── /github
+├── /contact
+├── /assistant
+├── /analytics
+├── /auth
+└── /health
+```
+
+---
+
+# 7.2 Database
+
+PostgreSQL shall be the preferred primary relational database.
+
+Potential entities:
+
+```text
+User
+Project
+Technology
+ProjectTechnology
+Experience
+Achievement
+Message
+Experiment
+GitHubRepository
+AIKnowledge
+AnalyticsEvent
+AdminSession
+```
+
+---
+
+# 7.3 Redis
+
+Redis may be used for:
+
+* API caching
+* Rate limiting
+* Session support
+* AI response caching
+* Temporary data
+
+---
+
+# 8. Frontend Requirements
+
+Preferred technology:
+
+```text
+Next.js
+TypeScript
+Tailwind CSS
+Framer Motion
+shadcn/ui
+```
+
+Frontend requirements:
+
+* Responsive
+* Accessible
+* Component-based
+* Type-safe
+* SEO optimized
+* Performance optimized
+* Progressive enhancement where practical
+
+---
+
+# 9. AI Architecture
+
+The AI assistant architecture shall follow:
+
+```text
+USER
+ ↓
+CHAT INTERFACE
+ ↓
+API
+ ↓
+AI SERVICE
+ ↓
+PORTFOLIO KNOWLEDGE
+ ↓
+RETRIEVAL / CONTEXT
+ ↓
+LLM
+ ↓
+RESPONSE
+```
+
+The system shall ensure that the AI assistant is grounded in actual portfolio data.
+
+---
+
+# 10. DevOps Requirements
+
+The application shall use containerization.
+
+## Docker
+
+Separate containers may be used for:
+
+```text
+Frontend
+Backend
+Database
+Redis
+Reverse Proxy
+```
+
+Example:
+
+```text
+docker-compose.yml
+```
+
+shall support local development.
+
+---
+
+# 10.1 CI/CD
+
+GitHub Actions shall automate:
+
+```text
+Git Push
+   ↓
+Lint
+   ↓
+Unit Tests
+   ↓
+Build
+   ↓
+Docker Build
+   ↓
+Security Checks
+   ↓
+Deployment
+```
+
+Deployment status may be surfaced on the portfolio.
+
+---
+
+# 10.2 Cloud Deployment
+
+The system should support production deployment on AWS.
+
+Potential infrastructure:
+
+```text
+CloudFront
+    ↓
+Frontend
+    ↓
+API
+    ↓
+Database
+
+Redis
+Monitoring
+Logging
+```
+
+The final architecture may evolve depending on cost and deployment requirements.
+
+---
+
+# 11. Security Requirements
+
+The system shall implement:
+
+* HTTPS
+* Secure authentication
+* Password hashing
+* Environment variables for secrets
+* API validation
+* Input sanitization
+* Rate limiting
+* CORS configuration
+* Security headers
+* SQL injection protection
+* XSS protection
+* CSRF protection where applicable
+* Secure cookies
+* API authorization
+* Dependency vulnerability scanning
+
+Sensitive information shall never be exposed in frontend source code.
+
+---
+
+# 12. Performance Requirements
+
+The application shall prioritize fast loading.
+
+Targets:
+
+* Fast initial page load
+* Optimized images
+* Lazy loading
+* Code splitting
+* Minimized JavaScript
+* Efficient animations
+* Server-side rendering where beneficial
+* Caching
+* CDN usage where appropriate
+
+The system should target strong Core Web Vitals and a Lighthouse performance score of approximately 90+ under realistic conditions.
+
+---
+
+# 13. Accessibility Requirements
+
+The website shall follow WCAG principles.
+
+Requirements:
+
+* Keyboard navigation
+* Visible focus states
+* Semantic HTML
+* Accessible labels
+* Sufficient contrast
+* Reduced-motion support
+* Screen-reader-friendly content
+* Accessible forms
+* Alternative text for meaningful images
+
+---
+
+# 14. Responsive Design
+
+The website must work on:
+
+* Desktop
+* Laptop
+* Tablet
+* Mobile
+
+The command-center UI must adapt rather than simply shrink.
+
+Mobile navigation may become:
+
+```text
+ATHARVA.OS
+
+[ MENU ]
+
+HOME
+WORK
+AI LAB
+ROBOTICS
+ABOUT
+CONTACT
+```
+
+---
+
+# 15. SEO Requirements
+
+The website shall implement:
+
+* Metadata
+* Open Graph
+* Twitter/X cards where appropriate
+* Sitemap
+* Robots configuration
+* Canonical URLs
+* Structured data where appropriate
+* Semantic HTML
+* Search-engine-readable content
+
+Potential SEO title:
+
+> Atharva Joshi — Software Engineer | AI, Full Stack, Cloud & Systems
+
+---
+
+# 16. Analytics
+
+The system may track anonymous/high-level events such as:
+
+* Page views
+* Project views
+* Resume clicks
+* Recruiter Mode usage
+* Contact form submissions
+* AI assistant usage
+* Experiment usage
+
+No unnecessary personal tracking should be implemented.
+
+---
+
+# 17. Visual Design Requirements
+
+## Design Direction
+
+The UI shall be:
+
+* Futuristic
+* Minimal
+* Technical
+* Premium
+* Professional
+* Interactive
+* Dark-first
+
+The visual language shall avoid excessive cyberpunk aesthetics.
+
+### Design principles
+
+```text
+Minimalism
++
+Technical depth
++
+Controlled motion
++
+Strong typography
++
+Interactive visualization
+```
+
+---
+
+# 18. Animation Requirements
+
+Animations may include:
+
+* Page transitions
+* Node connections
+* Data flow
+* Hover effects
+* Magnetic buttons
+* Terminal typing
+* Architecture flow
+* Graph visualization
+* Project transitions
+* Robotics replay
+
+Animations must:
+
+* Remain smooth
+* Not block navigation
+* Not cause excessive CPU usage
+* Respect reduced-motion preferences
+* Never compromise accessibility
+
+---
+
+# 19. Content Management
+
+Portfolio content should ideally be data-driven.
+
+Instead of hardcoding:
+
+```text
+project.tsx
+experience.tsx
+skills.tsx
+```
+
+the application should use structured content.
+
+Example:
+
+```text
+Project
+├── title
+├── slug
+├── description
+├── category
+├── technologies
+├── problem
+├── solution
+├── architecture
+├── results
+├── githubUrl
+├── demoUrl
+└── featured
+```
+
+This enables updates through the admin dashboard.
+
+---
+
+# 20. Suggested Repository Architecture
+
+```text
+atharva-os/
+│
+├── apps/
+│   │
+│   ├── web/
+│   │   ├── app/
+│   │   ├── components/
+│   │   ├── sections/
+│   │   ├── experiments/
+│   │   ├── animations/
+│   │   ├── hooks/
+│   │   └── lib/
+│   │
+│   └── api/
+│       ├── app/
+│       │   ├── api/
+│       │   ├── models/
+│       │   ├── schemas/
+│       │   ├── services/
+│       │   └── core/
+│       └── tests/
+│
+├── packages/
+│   ├── ui/
+│   ├── types/
+│   └── config/
+│
+├── ai/
+│   ├── assistant/
+│   ├── retrieval/
+│   └── knowledge/
+│
+├── infrastructure/
+│   ├── docker/
+│   ├── terraform/
+│   ├── nginx/
+│   └── monitoring/
+│
+├── docs/
+│   ├── architecture/
+│   ├── api/
+│   └── decisions/
+│
+├── .github/
+│   └── workflows/
+│
+├── docker-compose.yml
+├── README.md
+└── LICENSE
+```
+
+---
+
+# 21. High-Level Architecture
+
+```text
+                         INTERNET
+                             │
+                             ▼
+                    ┌─────────────────┐
+                    │      CDN        │
+                    └────────┬────────┘
+                             │
+                             ▼
+                    ┌─────────────────┐
+                    │   Next.js App   │
+                    │    Frontend      │
+                    └────────┬────────┘
+                             │
+                         REST/API
+                             │
+                             ▼
+                    ┌─────────────────┐
+                    │    FastAPI      │
+                    │    Backend      │
+                    └───────┬─────────┘
+                            │
+            ┌───────────────┼────────────────┐
+            │               │                │
+            ▼               ▼                ▼
+       PostgreSQL         Redis          AI Service
+            │               │                │
+            │               │                ▼
+            │               │          Knowledge Base
+            │               │
+            └───────────────┴────────────────┘
+                            │
+                            ▼
+                       Admin System
+```
+
+---
+
+# 22. Non-Functional Requirements
+
+## NFR-001 — Performance
+
+The application should provide fast page loads and smooth interaction.
+
+## NFR-002 — Scalability
+
+Backend architecture should support increasing visitors and API requests.
+
+## NFR-003 — Security
+
+Sensitive data and administrative functionality must be protected.
+
+## NFR-004 — Maintainability
+
+Code must use modular architecture and clear separation of concerns.
+
+## NFR-005 — Reliability
+
+Core portfolio functionality should remain available even if optional integrations fail.
+
+## NFR-006 — Accessibility
+
+The website must remain usable for users with accessibility requirements.
+
+## NFR-007 — Responsiveness
+
+The application must work across modern browsers and screen sizes.
+
+## NFR-008 — Observability
+
+Backend services should provide logs and health endpoints.
+
+## NFR-009 — Extensibility
+
+New projects, experiments, skills, and technologies should be easy to add.
+
+---
+
+# 23. Error Handling
+
+The system shall gracefully handle:
+
+* API failure
+* GitHub API failure
+* AI API failure
+* Database failure
+* Network failure
+* Invalid contact submission
+* Authentication failure
+* Missing project data
+* Deployment failure
+
+Example:
+
+```text
+AI ASSISTANT
+
+AI SERVICE TEMPORARILY UNAVAILABLE
+
+You can still explore:
+→ Projects
+→ Skills
+→ Experience
+→ Resume
+```
+
+The entire portfolio must never become unusable because one optional service fails.
+
+---
+
+# 24. Testing Requirements
+
+## Unit Testing
+
+Test:
+
+* Backend services
+* Utility functions
+* Authentication
+* Data validation
+* AI service wrappers
+
+## Integration Testing
+
+Test:
+
+* API + database
+* Contact submission
+* Authentication
+* GitHub integration
+* AI assistant
+
+## End-to-End Testing
+
+Test:
+
+* Landing → Home
+* Project navigation
+* Recruiter Mode
+* Resume download
+* Contact form
+* Admin login
+* AI assistant
+* Mobile navigation
+
+## Performance Testing
+
+Test:
+
+* Page load
+* API latency
+* AI response latency
+* Concurrent requests
+* Animation performance
+
+---
+
+# 25. Observability
+
+The backend should expose:
+
+```text
+GET /api/health
+```
+
+Example:
+
+```text
+{
+  "status": "healthy",
+  "database": "connected",
+  "cache": "connected",
+  "ai": "available"
+}
+```
+
+Production monitoring should include:
+
+* Error logging
+* API latency
+* Request counts
+* Server health
+* Database health
+* Deployment status
+
+---
+
+# 26. Content Structure
+
+## Home
+
+* Identity
+* Hero
+* System status
+* Featured projects
+* Recruiter CTA
+
+## About
+
+* Professional story
+* Engineering mindset
+* Engineering DNA
+
+## Work
+
+* Projects
+* Case studies
+* Architecture
+
+## AI Lab
+
+* AI experiments
+* Computer vision
+* AI assistant
+
+## Robotics
+
+* Robotics projects
+* SLAM
+* LiDAR
+* Autonomous systems
+
+## Engineering Lab
+
+* DSA
+* Algorithms
+* System design
+* Backend simulations
+
+## GitHub
+
+* Contributions
+* Repositories
+* Languages
+
+## Experience
+
+* Professional experience
+* Leadership
+* Research
+
+## Achievements
+
+* Competitions
+* Hackathons
+* Awards
+
+## Contact
+
+* Contact form
+* Professional links
+* Availability
+
+---
+
+# 27. Unique / Signature Features
+
+The following features are considered the signature differentiators of ATHARVA.OS:
+
+### 1. ATHARVA.OS Interface
+
+The portfolio behaves like an engineering operating system.
+
+### 2. Recruiter Mode
+
+A one-click professional summary optimized for recruiters.
+
+### 3. Interactive Architecture
+
+Projects become explorable system architectures.
+
+### 4. AI Portfolio Assistant
+
+Recruiters can ask questions about the candidate.
+
+### 5. Robotics Control Center
+
+Interactive visualization of robotics and autonomous systems.
+
+### 6. Engineering Lab
+
+Live demonstrations of algorithms and system-design concepts.
+
+### 7. Engineering DNA
+
+Interactive visualization of technical capabilities.
+
+### 8. System Status
+
+Real operational information from the portfolio infrastructure.
+
+### 9. Developer Terminal
+
+Terminal-style navigation and hidden commands.
+
+### 10. GitHub Integration
+
+Real developer activity.
+
+### 11. Admin Dashboard
+
+The portfolio itself demonstrates authentication, CRUD, database design, and backend engineering.
+
+### 12. Production Infrastructure
+
+Docker + CI/CD + cloud deployment + monitoring.
+
+---
+
+# 28. Feature Priority
+
+## P0 — Must Have
+
+* ATHARVA.OS UI
+* Hero
+* Home
+* About
+* Skills
+* Projects
+* Project case studies
+* Experience
+* Achievements
+* Resume
+* Contact
+* Responsive design
+* GitHub integration
+* Backend API
+* Database
+* Docker
+* Production deployment
+
+## P1 — High Priority
+
+* Recruiter Mode
+* Architecture Visualizer
+* AI Portfolio Assistant
+* Engineering DNA
+* Engineering Lab
+* Admin Dashboard
+* Authentication
+* CI/CD
+* System Status
+* Robotics section
+
+## P2 — Advanced
+
+* Robotics replay
+* Live AI experiments
+* DSA visualizer
+* System Design Simulator
+* Rate Limiter Simulator
+* Database visualizer
+* Advanced analytics
+* Developer terminal
+* Easter eggs
+
+---
+
+# 29. Development Phases
+
+## Phase 1 — Design System
+
+* Finalize visual identity
+* Typography
+* Colors
+* Components
+* Navigation
+* Animation system
+* Responsive design
+
+## Phase 2 — Core Portfolio
+
+* Landing
+* Home
+* About
+* Skills
+* Experience
+* Achievements
+* Projects
+* Resume
+* Contact
+
+## Phase 3 — Backend
+
+* API
+* Database
+* Contact system
+* Admin authentication
+* Admin dashboard
+* Content management
+
+## Phase 4 — Advanced Experience
+
+* Recruiter Mode
+* Architecture Visualizer
+* Engineering DNA
+* GitHub integration
+* System Status
+* Developer Terminal
+
+## Phase 5 — AI
+
+* AI assistant
+* Portfolio knowledge base
+* AI experiments
+* Computer vision demos
+
+## Phase 6 — Robotics
+
+* Robotics dashboard
+* LiDAR visualization
+* SLAM visualization
+* Robotics replay
+
+## Phase 7 — Engineering Lab
+
+* DSA visualizer
+* System design simulator
+* Rate limiter
+* Cache simulator
+* Database indexing visualization
+
+## Phase 8 — Production
+
+* Docker
+* CI/CD
+* AWS
+* Monitoring
+* Logging
+* Security
+* Performance optimization
+* SEO
+* Accessibility
+
+---
+
+# 30. Acceptance Criteria
+
+The project shall be considered successful when:
+
+* [ ] A recruiter can understand the candidate's profile within 30–60 seconds.
+* [ ] The website has a distinctive visual identity.
+* [ ] The website works on desktop and mobile.
+* [ ] Projects contain technical case studies.
+* [ ] At least one project contains an interactive architecture.
+* [ ] Recruiter Mode works.
+* [ ] AI Portfolio Assistant works.
+* [ ] GitHub integration works.
+* [ ] Contact form works through a backend API.
+* [ ] Admin dashboard works.
+* [ ] Authentication protects administrative functions.
+* [ ] Database stores portfolio/contact information.
+* [ ] Dockerized local development works.
+* [ ] CI/CD pipeline works.
+* [ ] Production deployment works.
+* [ ] HTTPS is enabled.
+* [ ] Core pages are SEO optimized.
+* [ ] Accessibility requirements are satisfied.
+* [ ] Core Web Vitals are optimized.
+* [ ] Robotics section contains meaningful technical visualization.
+* [ ] Engineering Lab contains multiple interactive experiments.
+* [ ] AI Lab contains at least one functional demonstration.
+* [ ] No fabricated metrics or experience are displayed.
+* [ ] Optional integrations failing do not break the main portfolio.
+
+---
+
+# 31. Success Metrics
+
+The portfolio should be evaluated using:
+
+### Recruiter Experience
+
+* Time to understand profile
+* Resume click-through rate
+* Project engagement
+* Contact conversion
+
+### Technical Quality
+
+* Lighthouse score
+* API response time
+* Error rate
+* Deployment reliability
+* Accessibility score
+
+### Engagement
+
+* Project views
+* Architecture interactions
+* AI assistant usage
+* Engineering Lab interactions
+* Recruiter Mode usage
+
+---
+
+# 32. Final Product Definition
+
+ATHARVA.OS is not intended to be a conventional personal portfolio.
+
+It is a **production-grade interactive engineering showcase** where:
+
+```text
+                    PORTFOLIO
+                        │
+                        ▼
+                  USER EXPERIENCE
+                        │
+          ┌─────────────┼─────────────┐
+          ▼             ▼             ▼
+       FULL STACK       AI          SYSTEMS
+          │             │             │
+          ▼             ▼             ▼
+       Backend       AI Lab       Architecture
+          │             │             │
+          └─────────────┼─────────────┘
+                        ▼
+                    ROBOTICS
+                        │
+                        ▼
+                ENGINEERING LAB
+                        │
+                        ▼
+                  CLOUD / DEVOPS
+                        │
+                        ▼
+                  PRODUCTION APP
+```
+
+The final experience should communicate one central message:
+
+> **Atharva doesn't just use technologies — he builds systems with them.**
+
+---
+
+# 33. Recommended Final Technology Stack
+
+## Frontend
+
+```text
+Next.js
+TypeScript
+Tailwind CSS
+Framer Motion
+shadcn/ui
+Three.js / React Three Fiber where genuinely useful
+```
+
+## Backend
+
+```text
+FastAPI
+Python
+Pydantic
+REST APIs
+```
+
+## Database
+
+```text
+PostgreSQL
+Redis
+```
+
+## AI
+
+```text
+OpenAI API
+Embeddings / Retrieval
+Python AI services
+PyTorch / OpenCV for demonstrations
+```
+
+## DevOps
+
+```text
+Docker
+Docker Compose
+GitHub Actions
+Nginx
+AWS
+```
+
+## Testing
+
+```text
+Pytest
+Jest / Vitest
+Playwright
+```
+
+## Monitoring
+
+```text
+Application logging
+Health checks
+Error tracking
+Performance monitoring
+```
+
+---
+
+# 34. Final Design Principle
+
+The most important requirement of this project is:
+
+> **Every major technical claim should ideally be backed by something interactive on the website.**
+
+For example:
+
+```text
+"I know system design"
+            ↓
+Interactive Architecture Lab
+
+"I know AI"
+            ↓
+AI Lab + AI Assistant
+
+"I know backend"
+            ↓
+Real APIs + Database + Admin Dashboard
+
+"I know DevOps"
+            ↓
+Docker + CI/CD + Deployment Status
+
+"I know robotics"
+            ↓
+Robotics Control Center
+
+"I know DSA"
+            ↓
+Engineering Lab
+
+"I build production software"
+            ↓
+The portfolio itself
+```
+
+This makes **ATHARVA.OS** simultaneously a portfolio, a technical demonstration, a full-stack application, an AI application, a system-design showcase, and a live proof of engineering ability.
+
+**End of SRS — Version 1.0**

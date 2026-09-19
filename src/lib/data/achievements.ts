@@ -17,7 +17,7 @@ export const achievements: Achievement[] = [
     position: "AIR 1",
     year: "2025",
     description:
-      "Ranked 1st nationwide (500+ teams including IITs & NITs) for a GNSS-free autonomous drone with LiDAR-based computer vision.",
+      "Ranked 1st nationwide (AIR 1) among 500+ teams for an autonomous UAV with GPS-free navigation, LiDAR-based terrain mapping, and computer-vision landing-zone detection.",
     category: "competition",
   },
   {
@@ -27,7 +27,7 @@ export const achievements: Achievement[] = [
     position: "AIR 9",
     year: "2026",
     description:
-      "100/100 in Stage 1 & Stage 2, Best Technical Report Award, and the highest technical evaluation score.",
+      "Finished AIR 9 nationally with 100/100 in Stage 1 & Stage 2 and the Best Technical Report Award.",
     category: "competition",
   },
   {
@@ -41,13 +41,23 @@ export const achievements: Achievement[] = [
     category: "hackathon",
   },
   {
+    id: "mastercard-adversia",
+    title: "Adversia — AI Payment Security Lab",
+    event: "Mastercard Hackathon",
+    position: "Project",
+    year: "2025",
+    description:
+      "Built an AI Red Team ↔ Blue Team payment fraud-detection system with 92/92 unit tests and 14/14 end-to-end tests; adversarial recall improved by 13.5 pp and F1 from 0.357 to 0.519.",
+    category: "hackathon",
+  },
+  {
     id: "pict-robotics-lead",
     title: "Finance & Project Management Lead",
     event: "PICT Robotics Club",
     position: "Lead",
     year: "2026",
     description:
-      "Leading a 30-member team; owns architecture, task pipelines, and integration milestones.",
+      "Leading a 30-member robotics team — owns project planning, budgeting, and integration milestones; key outcomes include AIR 1 (IRoC-U 2025) and AIR 9 (DD Robocon 2026).",
     category: "leadership",
   },
 ];

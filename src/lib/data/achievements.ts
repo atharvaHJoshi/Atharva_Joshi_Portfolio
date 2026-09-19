@@ -43,11 +43,21 @@ export const achievements: Achievement[] = [
   {
     id: "mastercard-adversia",
     title: "Adversia — AI Payment Security Lab",
-    event: "Mastercard Hackathon",
+    event: "Mastercard Hackathon (Aug – Sep 2026)",
     position: "Project",
-    year: "2025",
+    year: "2026",
     description:
       "Built an AI Red Team ↔ Blue Team payment fraud-detection system with 92/92 unit tests and 14/14 end-to-end tests; adversarial recall improved by 13.5 pp and F1 from 0.357 to 0.519.",
+    category: "hackathon",
+  },
+  {
+    id: "techfiesta-2025",
+    title: "Techfiesta International Hackathon",
+    event: "Techfiesta International Hackathon 2025",
+    position: "Runner Up",
+    year: "2025",
+    description:
+      "Finished Runner Up at the Techfiesta International Hackathon 2025.",
     category: "hackathon",
   },
   {

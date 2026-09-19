@@ -7,7 +7,7 @@ export const SITE = {
   email: "josh.atharva2005@gmail.com",
   phone: "+91 8999-621-553",
   location: "Pune, Maharashtra, India",
-  github: "https://github.com/atharvajoshi",
+  github: "https://github.com/atharvaHJoshi",
   linkedin: "https://www.linkedin.com/in/atharva-joshi-35a254296/",
   status: "OPEN TO SOFTWARE ENGINEERING OPPORTUNITIES",
 } as const;

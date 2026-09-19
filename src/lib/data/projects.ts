@@ -163,6 +163,30 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    id: "elearning-pathway",
+    title: "E-Learning Pathway Generator",
+    category: "AI / EdTech",
+    description:
+      "Generates personalized e-learning roadmaps by considering neuroplasticity principles and each learner's individual learning capabilities.",
+    problem:
+      "One-size-fits-all learning paths ignore how individuals actually learn; roadmaps must adapt to each person's cognitive profile and learning capability.",
+    solution:
+      "Developed an e-learning pathway generator that builds personalized learning roadmaps by factoring in neuroplasticity and the particular human learning capabilities of each learner.",
+    technologies: ["Python", "Machine Learning", "LLMs", "GenAI", "Feature Engineering"],
+    architecture: [
+      "Learner Capability Analysis",
+      "Neuroplasticity-aware Modeling",
+      "Personalized Roadmap Generation",
+      "Adaptive Recommendations",
+    ],
+    challenges: [
+      "Modeling individual learning capabilities",
+      "Mapping neuroplasticity principles into roadmap generation",
+    ],
+    results: [],
+    featured: false,
+  },
+  {
     id: "collabiq",
     title: "CollabIQ",
     category: "Full Stack / AI",

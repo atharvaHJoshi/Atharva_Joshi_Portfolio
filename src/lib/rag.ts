@@ -145,7 +145,7 @@ function buildKnowledgeBase(): KnowledgeEntry[] {
     source: "Contact",
     category: "contact",
     keywords: ["contact", "email", "reach", "hire", "linkedin", "github", "social", "resume", "cv", "download"],
-    text: `Reach Atharva at ${SITE.email}. GitHub: ${SITE.github} — LinkedIn: ${SITE.linkedin}. You can also use the Contact form on this site to request a resume.`,
+    text: `Reach Atharva at ${SITE.email}. GitHub: ${SITE.github} — LinkedIn: ${SITE.linkedin}. Resume PDF is downloadable from the Contact and Hero sections of this site.`,
   });
 
   const allSkillNames = allSkills

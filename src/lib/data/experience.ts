@@ -57,12 +57,12 @@ export const experiences: Experience[] = [
     organization: "gVisor · eksctl · SoL-Pi",
     duration: "Ongoing",
     description:
-      "Contributing to open-source projects through repository issues, codebase exploration, and validated fixes using issue-based development workflows.",
+      "Open Source: gVisor | eksctl (Amazon EKS) | SoL-Pi — Resolved GitHub issues, debugged existing codebases, implemented fixes, added/validated tests, and contributed through structured pull requests and code-review workflows.",
     responsibilities: [
-      "gVisor — worked through repository issues, understood the existing codebase, implemented fixes, and validated the changes.",
-      "eksctl (official CLI for Amazon EKS) — worked on issues with corresponding code and test changes.",
-      "SoL-Pi — contributed to the project and its development workflow.",
-      "Built comfort with reading unfamiliar codebases, Git/GitHub workflows, issue tracking, debugging, and writing validated fixes.",
+      "gVisor — contributed fixes and improvements to the open-source container sandboxing/runtime project; investigated issues, implemented changes, and validated solutions through Git/GitHub workflows.",
+      "eksctl (official CLI for Amazon EKS) — contributed fixes and issue resolutions to the official Amazon EKS CLI, including debugging existing functionality, implementing changes, and adding/validating tests.",
+      "SoL-Pi — contributed to the open-source robotics/software project, working with the existing codebase and improving project functionality.",
+      "Participated in issue-driven development, debugging, testing, documentation, and pull-request based workflows across open-source repositories.",
     ],
     technologies: ["Go", "Git", "GitHub", "Issue Tracking", "Testing", "Debugging"],
     achievements: [],
